@@ -1,0 +1,221 @@
+/* About Section Container */
+#about {
+    width: 80%;
+    min-height: 80vh;
+    margin: 0px auto;
+    padding: 12vh 0;
+    text-align: center;
+    background: #f8f9fa; /* Light Background */
+    color: #333; /* Darker Text for Readability */
+  }
+  
+  /* About Title and Underline */
+  .about-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222; /* Darker for Emphasis */
+  }
+  
+  .underline {
+    width: 50px;
+    height: 3px;
+    background: #7E0258; /* Soft Purple Accent */
+    margin: 8px auto;
+  }
+  
+  .about-header p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 19px;
+    color: #555; /* Slightly Darker for Contrast */
+
+  }
+  
+  /* About Content Section */
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 40px;
+  }
+  
+  /* Left Side - Description */
+  .about-text {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .about-text h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 2;
+  }
+  
+  .about-text a {
+    color: #7E0258;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* Right Side - Skills */
+  .skills-section {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .skills-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .skills-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .skill-box {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+.skill-box:hover{
+    background: #e9eaec;
+}
+
+  .skill-box .skill-text{
+    font-weight: bold;
+  }
+  .skill-box .skill-img{
+    height: 30px;
+    width: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #about {
+      width: 100%;
+      min-height: 80vh;
+      margin: 0px auto;
+      text-align: center;
+      background: #f8f9fa; /* Light Background */
+      color: #333; /* Darker Text for Readability */
+    }
+    .about-header h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #222; /* Darker for Emphasis */
+    }
+    
+    .underline {
+      width: 50px;
+      height: 3px;
+      background: #7E0258; /* Soft Purple Accent */
+      margin: 8px auto;
+    }
+    
+    .about-header p {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 19px;
+      color: #555; /* Slightly Darker for Contrast */
+  
+    }
+    
+    /* About Content Section */
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      gap: 40px;
+    }
+    
+    /* Left Side - Description */
+    .about-text {
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+    }
+    
+    .about-text h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #222;
+
+    }
+    
+    .about-text p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 15px;
+      line-height: 2;
+    }
+    
+    .about-text a {
+      color: #7E0258;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    
+    /* Right Side - Skills */
+    .skills-section {
+      width: 100%;
+      text-align: left;
+      padding: 20px;
+    }
+    
+    .skills-section h3 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #222;
+      text-align: center;
+      
+    }
+    
+    .skills-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    
+    .skill-box {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+  .skill-box:hover{
+      background: #e9eaec;
+  }
+  
+    .skill-box .skill-text{
+      font-weight: bold;
+    }
+    .skill-box .skill-img{
+      height: 30px;
+      width: auto;
+    }
+
+  }

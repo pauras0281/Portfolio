@@ -1,0 +1,99 @@
+.projects-section {
+    text-align: center;
+    width: 100%;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    padding: 12vh 0;
+    overflow-x: hidden;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 4px;
+    background: #6a0dad;
+    margin: 8px auto 20px;
+    border-radius: 2px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .project-info {
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .project-button {
+    background: #6a0dad;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .project-button:hover {
+    background: #540aa6;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .project-container{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .project-image{
+      width: 100%;
+      height: auto;
+    }
+    .project-title{
+      text-align: center;
+    }
+    
+
+
+
+  }
