@@ -2,9 +2,7 @@ import React from "react";
 import "./Footer.css";
 import {
   FaGithub,
-  FaTwitter,
   FaLinkedin,
-  FaYoutube,
   FaWhatsapp,
   FaInstagram,
   FaPhone,
@@ -12,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer" data-aos="fade-in" >
+    <footer className="footer" data-aos="fade-in">
       <div className="footer-content">
         <div className="footer-left">
           <h2>YASH LOKHANDE</h2>
@@ -38,7 +36,7 @@ const Footer = () => {
             >
               <FaInstagram />
             </a>
-         
+
             <a href="https://github.com/pauras0281/" target="_blank">
               <FaGithub />
             </a>
@@ -47,7 +45,6 @@ const Footer = () => {
         <div className="footer-right">
           <h3>PHONE</h3>
           <div className="social-icons">
-            
             <a
               href="https://wa.me/+918605578198"
               target="_blank"

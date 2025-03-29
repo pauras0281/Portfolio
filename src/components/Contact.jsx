@@ -10,6 +10,7 @@ const Contact = () => {
   });
 
   const [successMessage, setSuccessMessage] = useState("");
+  const [sending, setSending] = useState(false)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,25 +18,32 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    setSending(true)
+    console.log(sending);
 
     emailjs
       .send(
-        "service_qjll2zi", // Replace with your actual Service ID
-        "template_iu8d3bc", // Replace with your actual Template ID
+        "service_qjll2zi", 
+        "template_iu8d3bc",
         formData,
-        "FdqHHHYYbnBs61tp2" // Replace with your actual Public Key
+        "FdqHHHYYbnBs61tp2" 
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setSuccessMessage("Message sent successfully!");
           setFormData({ name: "", email: "", message: "" });
+          setSending(false)
         },
         (error) => {
           console.log("FAILED...", error);
           setSuccessMessage("Failed to send message. Please try again.");
+          setSending(false)
         }
       );
+      console.log(sending);
+      
   };
 
   return (
@@ -46,7 +54,7 @@ const Contact = () => {
         Feel free to Contact me by submitting the form below and I will get
         back to you as soon as possible.
       </p>
-      <form className="contact-form" onSubmit={sendEmail}>
+      {!sending && <form className="contact-form" onSubmit={sendEmail}>
         <label  data-aos="fade-up" >Name</label>
         <input
           type="text" 
@@ -84,7 +92,8 @@ const Contact = () => {
         </button>
 
         {successMessage && <p className="success-message">{successMessage}</p>}
-      </form>
+      </form>}
+      {sending && <div className="contact-form form-hide"><h1>Sending Message</h1></div>}
     </section>
   );
 };

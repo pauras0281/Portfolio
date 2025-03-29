@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css"; // Import the CSS file
+import "./Navbar.css"; 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false); // Close menu after clicking a link
+    setMenuOpen(false); 
   };
 
   return (

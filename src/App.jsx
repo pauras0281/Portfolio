@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import 'aos/dist/aos.css'; // Import AOS styles
-import AOS from 'aos'; // Import AOS library
+import 'aos/dist/aos.css';
+import AOS from 'aos'; 
 
 
 import Navbar from "./components/Navbar";
@@ -14,8 +14,8 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Set the animation duration (optional)
-      once: true, // Whether animations should happen only once (optional)
+      duration: 1000,
+      once: true,
     });
   }, []);
   return (
