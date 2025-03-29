@@ -59,13 +59,14 @@
     margin-bottom: 15px;
     line-height: 2;
   }
-  
+
   .about-text a {
     color: #7E0258;
     text-decoration: underline;
     font-weight: bold;
+    cursor: pointer;
   }
-  
+
   /* Right Side - Skills */
   .skills-section {
     width: 50%;

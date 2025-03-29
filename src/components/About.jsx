@@ -2,6 +2,15 @@ import React from "react";
 import "./About.css";
 
 const About = () => {
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   return (
     <section id="about">
 
@@ -10,7 +19,7 @@ const About = () => {
         <div className="underline"></div>
         <p>
           Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology.
+          current skills mostly in terms of programming and technology.📌
         </p>
       </div>
 
@@ -23,7 +32,7 @@ const About = () => {
             I'm a <strong>Frontend Focused Web Developer</strong> building and
             managing the Front-end of Websites and Web Applications that leads
             to the success of the overall product. Check out some of my work in
-            the <strong>Projects</strong> section.
+            the <strong><a onClick={()=>handleScroll("projects")}>Projects</a></strong> section.
           </p>
           <p>
             I also like sharing content related to the stuff that I have learned
@@ -35,7 +44,7 @@ const About = () => {
             I'm open to <strong>Job </strong>opportunities where I can
             contribute, learn and grow. If you have a good opportunity that
             matches my skills and experience then don't hesitate to{" "}
-            <strong>contact </strong>me.
+            <strong><a onClick={()=>handleScroll("contact")}>contact</a></strong>&nbsp;me.
           </p>
         </div>
 

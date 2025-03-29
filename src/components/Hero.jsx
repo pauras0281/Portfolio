@@ -9,7 +9,11 @@ const Hero = () => {
       <p data-aos="fade-in" >your trusty Full Stack Companion! Whether it's
         crafting seamless user experiences or fine-tuning server-side magic, I'm
         here to guide you through the tech jungle. Let's embark on this journey
-        together!</p>
+        together!🥰 </p>;
+        <div className="me">
+        <h3>Software Engineer</h3>
+        <h3>Web/Mobile App Developer</h3>
+        </div>
       <a href="Pauras_Lokhande.pdf" download="Pauras's Resume.pdf" className="hero-btn" data-aos="slide-up" >RESUME</a>
       </div>
     </section>

@@ -15,12 +15,14 @@ const Navbar = () => {
   return (
     <nav className="navbar" data-aos="fade-in" >
       <div className="logo-container">
+        <div className="img-div">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrS0QKeIHqSCyTZdtYAg9kcvZ3RMSomljf2g&s"
           alt="" 
           data-aos="slide-right"
           className="profile-img"
         />
+        </div>
         <span className="logo-text" data-aos="slide-left">YASH LOKHANDE</span>
       </div>
 

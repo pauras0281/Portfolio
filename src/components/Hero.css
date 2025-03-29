@@ -15,6 +15,11 @@
 
 .hero h1{
     font-size: 4rem;
+    background: #7E0258;
+    background-size: cover;
+    background-clip: text;              
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .hero p{
     font-size: 1.5rem;
@@ -34,10 +39,35 @@
     line-height: 1.5;
 }
 .hero a:hover{
-    transform: translateY(-10%);
     background-color: white;
     color: #7E0258;
     border: 1px solid #7E0258;
+    font-weight: bolder;
+}
+
+.hero .me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #7E0258;
+    font-family: "Graduate", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 20vh;
+}
+.me h3{
+    margin: 30px 100px;
+    cursor: pointer;
+    color: #c20e8c;
+    padding: 20px;
+    border-radius: 20px;
+}
+.me h3:hover{
+    text-decoration: underline;
+    background-color: black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,5 +84,21 @@
         font-size: 18px;
     }
 
+    .hero .me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #7E0258;
+        font-family: "Graduate", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .me h3{
+        margin:5px 10px;
+    }
 
 }
