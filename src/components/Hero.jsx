@@ -14,7 +14,7 @@ const Hero = () => {
         <h3>Software Engineer</h3>
         <h3>Web/Mobile App Developer</h3>
         </div>
-      <a href="Pauras_Lokhande.pdf" download="Pauras's Resume.pdf" className="hero-btn" data-aos="slide-up" >RESUME</a>
+      <a href="Resume.pdf" download="Pauras's Resume.pdf" className="hero-btn" data-aos="slide-up" >RESUME</a>
       </div>
     </section>
   );
