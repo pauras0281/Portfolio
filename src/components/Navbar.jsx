@@ -23,7 +23,7 @@ const Navbar = () => {
           className="profile-img"
         />
         </div>
-        <span className="logo-text">YASH LOKHANDE</span>
+        <span className="logo-text">PAURAS LOKHANDE</span>
       </div>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
